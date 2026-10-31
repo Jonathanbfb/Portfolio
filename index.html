@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Barros | Especialista em Desenvolvimento de Sistemas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --whatsapp: #25D366;
+            --whatsapp-hover: #128C7E;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #ffffff;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+
+        .section-title i {
+            color: var(--accent);
+        }
+
+        .badge-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .badge {
+            background: #eff6ff;
+            color: var(--accent);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border: 1px solid #bfdbfe;
+        }
+
+        .experience-list {
+            list-style: none;
+        }
+
+        .experience-item {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        .experience-item::before {
+            content: "•";
+            color: var(--accent);
+            font-size: 1.5rem;
+            position: absolute;
+            left: 5px;
+            top: -5px;
+        }
+
+        .cta-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: var(--whatsapp);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 14px 28px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: var(--whatsapp-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.75rem;
+            }
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Jonathan Barros</h1>
+            <p>Especialista em Desenvolvimento de Sistemas</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Atuação Acadêmica</h2>
+                <p>Professor dos cursos de graduação de Engenharia da <strong>Faculdade Matias Machline</strong>.</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Experiência Docente</h2>
+                <p style="margin-bottom: 10px;">Atuando desde <strong>2012</strong> como professor dos cursos de tecnologia nas instituições:</p>
+                <ul class="experience-list">
+                    <li class="experience-item">SENAI</li>
+                    <li class="experience-item">CEBRAC</li>
+                    <li class="experience-item">CETAM</li>
+                    <li class="experience-item">UEA</li>
+                    <li class="experience-item">UNINORTE</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title"><i class="fa-solid fa-book-open"></i> Cursos & Disciplinas</h2>
+                <div class="badge-list">
+                    <span class="badge">Indústria 4.0</span>
+                    <span class="badge">Inteligência Artificial</span>
+                    <span class="badge">Sistema de Visão</span>
+                </div>
+            </div>
+
+            <div class="cta-container">
+                <a href="https://wa.me/5592993351939" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp fa-lg"></i> Entrar em Contato no WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
